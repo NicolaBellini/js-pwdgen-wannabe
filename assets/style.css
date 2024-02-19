@@ -11,18 +11,26 @@ img{
   height: auto;
 }
 
+video{
+  max-width: 100%;
+  z-index: 0;
+  object-fit: cover;
+  position: relative;
+}
+
 .background{
   height: 100vh;
-  background-image: url(/assets/img/sfondo.jpg);
+/*  
   background-size: cover;
-  background-position: bottom center;
+  background-position: bottom center; */
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 #output{
-  font-size: 3rem;
+
 }
 
 .rosso{
@@ -39,6 +47,11 @@ img{
 
 
 #output{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  font-size: 3rem;
   border-radius: 20px;
   height: 20vh;
   width: 60%;
