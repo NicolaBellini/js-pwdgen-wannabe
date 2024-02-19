@@ -1,0 +1,72 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Kode Mono", monospace;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+.background{
+  height: 100vh;
+  background-image: url(/assets/img/sfondo.jpg);
+  background-size: cover;
+  background-position: bottom center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#output{
+  font-size: 3rem;
+}
+
+.rosso{
+  color: rgb(188, 188, 188);
+  background-color: rgba(255, 0, 0, 0.236);
+  border-radius: 30px;
+}
+
+.blu{
+  color: rgb(207, 207, 207);
+  background-color: rgba(0, 0, 255, 0.247);
+  border-radius: 30px;
+}
+
+
+#output{
+  border-radius: 20px;
+  height: 20vh;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+  filter: blur(5px);
+  transition: ease 0.5s;
+  /* filter: blur(20%); */
+}
+
+#output:hover{
+  filter: none;
+}
+
+#output p{
+  filter: none;
+}
+
+/* 
+.blurred{
+  height: 20vh;
+  width: 60%;
+  border-radius: 30px;
+
+  background-color: #a857396d;
+  z-index: 1;
+} */
+
